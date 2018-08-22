@@ -1,0 +1,33 @@
+<div class="container">
+<div ng-controller="AppCtrl">
+        <button class="btn btn-danger navbar-btn" type="button" ng-click="addStudent()">Add Student</button>
+<table class="table table-hover">
+        <thead>
+            <tr>
+                <th>Roll No</th>
+                <th>Name</th>
+                <th>Degree</th>
+                <th>Department</th>
+                <th>Address</th>
+                <th>CGPA</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="student in students">
+                <td>{{ student.rollno }}</td>
+                <td>{{ student.name }}</td>
+                <td>{{ student.degree }}</td>
+                <td>{{ student.department }}</td>
+                <td>{{ student.address }}</td>
+                <td>{{ student.cgpa }}</td>
+                <td>
+                    <button type="button" ng-click="editStudent(student);">Edit</button>
+                    <button type="button" ng-click="deleteStudent(student);">Delete</button>
+                </td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>

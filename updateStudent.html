@@ -1,0 +1,83 @@
+<div ng-controller="updateCtrl" class="container">
+
+    <form ng-submit="updateStudentForm()" class="form-horizontal">
+            <div class="form-group">
+                    <label class="control-label col-sm-2">Roll No</label>
+                    <div class="col-sm-10">
+                    <input type="text" name="rollno" ng-model="studentData.rollno">
+                     </div>
+                </div>
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2">Name</label>
+            <div class="col-sm-10">
+            <input type="text" name="name" ng-model="studentData.name">
+        </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2">Address</label>
+            <div class="col-sm-10">
+            <input type="text" name="address" ng-model="studentData.address">
+        </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2">Degree</label>
+            <div class="col-sm-10">
+            <select ng-model="studentData.degree">
+                <option ng-repeat="x in degrees">{{x}}</option>
+            </select>
+        </div>
+        </div>
+        
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2">Department</label>
+            <div class="col-sm-10">
+            <select ng-model="studentData.department">
+                <option ng-repeat="x in departments">{{x}}</option>
+            </select>
+        </div>
+        </div>
+        
+        <div class="form-group">
+            <label class="control-label col-sm-2">CGPA</label>
+            <div class="col-sm-10">
+            <input type="text" name="cgpa" ng-model="studentData.cgpa">
+        </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+                <button type="submit">Submit</button>
+            </div>
+        </div>
+        
+        <!-- <label>Roll No</label>
+        <input type="text" name="rollno" ng-model="studentData.rollno">
+
+        <label>Name</label>
+        <input type="text" name="name" ng-model="studentData.name">
+
+        <label>address</label>
+        <input type="text" name="address" ng-model="studentData.address">
+
+        <label>degree</label>
+        <select ng-model="studentData.department">
+            <option ng-repeat="x in departments">{{x}}</option>
+        </select>
+
+
+        <label>department</label>
+        <select ng-model="studentData.department">
+            <option ng-repeat="x in departments">{{x}}</option>
+        </select>
+
+        <label>cgpa</label>
+        <input type="text" name="cgpa" ng-model="studentData.cgpa">
+
+        <button type="submit">Submit</button> -->
+
+    </form>
+</div>
